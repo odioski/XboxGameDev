@@ -1,5 +1,7 @@
 # Xbox One Game Development
 
+> 🎮 A complete, production-ready template for Xbox One/Series X|S game development on Windows 11
+
 A clean build environment for developing Xbox One games on Windows 11.
 
 ## Overview
