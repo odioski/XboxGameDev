@@ -47,6 +47,11 @@ Game::~Game()
 // Initialize the Direct3D resources required to run.
 void Game::Initialize(HWND window)
 {
+    if (!window)
+    {
+        throw std::invalid_argument("Window handle cannot be null");
+    }
+    
     m_window = window;
 
     CreateDevice();
@@ -93,6 +98,11 @@ void Game::Update()
 
     // Cap the delta time to prevent spiral of death
     // TODO: Add your game logic here
+    //       - Process input (gamepad, keyboard, mouse)
+    //       - Update game state (physics, AI, animations)
+    //       - Handle collisions
+    //       - Update camera position
+    //       - Play audio/music
 }
 
 // Draws the scene.

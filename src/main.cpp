@@ -9,8 +9,11 @@
 #include "Game.h"
 
 #include <windows.h>
+#include <DirectXMath.h>
 #include <exception>
 #include <memory>
+
+using namespace DirectX;
 
 #ifdef __clang__
 #pragma clang diagnostic ignored "-Wcovered-switch-default"

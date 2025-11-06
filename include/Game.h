@@ -73,6 +73,7 @@ public:
     Game& operator= (Game const&) = delete;
 
     // Initialization and management
+    // window: Valid HWND handle to the application window (must not be null)
     void Initialize(HWND window);
 
     // Basic game loop
