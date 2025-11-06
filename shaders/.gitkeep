@@ -1,0 +1,7 @@
+# Shaders Directory
+
+Place your HLSL shader files here:
+- Vertex shaders (.hlsl)
+- Pixel shaders (.hlsl)
+- Compute shaders (.hlsl)
+- Shader includes (.hlsli)
