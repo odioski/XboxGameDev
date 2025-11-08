@@ -351,3 +351,15 @@ pythonenv3.8/
 # Generic pattern for any other DirectX-* top-level directories
 /DirectX-*/
 
+# Broad rules: ignore any file or folder whose name contains "DirectX" (case-insensitive)
+# This prevents tracking nested DirectX helper repos or artifacts anywhere in the tree.
+# Matches names like DirectX-Headers, directx, DirectXTK, DirectXTex, etc.
+# Git on Windows is case-insensitive, but we include both cases for clarity.
+**/*DirectX*/
+**/*DirectX*/**
+**/*directx*/
+**/*directx*/**
+**/*DirectX*
+**/*directx*
+
+
