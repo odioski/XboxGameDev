@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:xbox="http://schemas.microsoft.com/appx/manifest/xbox/windows10"
+         IgnorableNamespaces="uap mp xbox">
+
+  <Identity Name="XboxOneXGame.Scorpio"
+            Publisher="CN=Developer"
+            Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="12345678-1234-1234-1234-123456789abc"
+                    PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Xbox One X Scorpio Game</DisplayName>
+    <PublisherDisplayName>Game Developer</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>Xbox One X Scorpio Enhanced Game with 4K and HDR support</Description>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Xbox" MinVersion="10.0.14393.0" MaxVersionTested="10.0.19041.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="Game"
+                 Executable="XboxOneXGame.exe"
+                 EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements
+        DisplayName="Xbox One X Scorpio Game"
+        Square150x150Logo="Assets\Logo.png"
+        Square44x44Logo="Assets\SmallLogo.png"
+        Description="Xbox One X Scorpio Enhanced Game"
+        BackgroundColor="#000000">
+        <uap:DefaultTile Wide310x150Logo="Assets\WideLogo.png" />
+      </uap:VisualElements>
+
+      <!-- Xbox One X Scorpio Enhanced Features -->
+      <xbox:Extension Category="xbox.system.resources">
+        <xbox:SystemResources>
+          <xbox:MemoryRequirement>standard</xbox:MemoryRequirement>
+          <xbox:Graphics4K>true</xbox:Graphics4K>
+          <xbox:HDR>true</xbox:HDR>
+          <xbox:VariableRefreshRate>true</xbox:VariableRefreshRate>
+          <xbox:SpatialAudio>true</xbox:SpatialAudio>
+        </xbox:SystemResources>
+      </xbox:Extension>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <xbox:Capability Name="systemManagement" />
+    <xbox:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>
