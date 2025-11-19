@@ -7,7 +7,7 @@ set XBOX_PASS=app64
 
 REM First deploy locally for validation
 echo [STEP 1] Deploying game package locally for validation...
-powershell.exe -Command "try { Add-AppxPackage -Path 'XboxOneXGame.appx' -Verbose; Write-Host 'Local deployment completed successfully!' -ForegroundColor Green } catch { Write-Host 'Local deployment failed:' $_.Exception.Message -ForegroundColor Red; exit 1 }"
+powershell.exe -Command "try { Add-AppxPackage -Path 'bin/Gaming.Xbox.Scorpio.x64/Debug/XboxOneXGame.appx' -Verbose; Write-Host 'Local deployment completed successfully!' -ForegroundColor Green } catch { Write-Host 'Local deployment failed:' $_.Exception.Message -ForegroundColor Red; exit 1 }"
 
 if %ERRORLEVEL% NEQ 0 (
     echo Local deployment failed. Cannot proceed to Xbox console deployment.
