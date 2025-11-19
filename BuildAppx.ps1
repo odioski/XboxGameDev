@@ -27,7 +27,7 @@ Copy-Item "$BinPath\XboxOneXGame.exe" $PackageRoot -Force
 Copy-Item "$BinPath\XboxOneXGame.pdb" $PackageRoot -Force -ErrorAction SilentlyContinue
 
 # Copy manifest
-Copy-Item "$ProjectRoot\Package.appxmanifest" (Join-Path $PackageRoot "AppxManifest.xml") -Force
+Copy-Item "$ProjectRoot\AppxManifest.xml" (Join-Path $PackageRoot "AppxManifest.xml") -Force
 
 # Copy MicrosoftGame.config for Xbox
 Copy-Item "$ProjectRoot\MicrosoftGame.config" $PackageRoot -Force
