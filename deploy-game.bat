@@ -2,7 +2,7 @@
 echo Deploying Xbox One X Game to 192.168.8.138...
 
 set XBOX_IP=192.168.8.138
-set XBOX_USER=mrod
+set XBOX_USER=odani
 set XBOX_PASS=app64
 
 REM First deploy locally for validation
