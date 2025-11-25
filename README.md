@@ -91,3 +91,4 @@ The code includes specific optimizations for Xbox One X Scorpio:
 - Uses Microsoft's official GDK APIs and best practices
 - Targets Gaming.Xbox.Scorpio.x64 platform exclusively
 - Ready for Xbox console deployment and testing
+- Scorpio is the codename for the Xbox One X, originally released as the developer's Xbox One. During the moment, it came with free access to the Xbox One SDK which has MANY versions now than at the time of launch. This environment/sketchpad is built with GDK.
