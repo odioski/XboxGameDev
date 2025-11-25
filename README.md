@@ -51,6 +51,8 @@ However, code is code and we like to know what's going on under the hood.
 Therefore you'll need to run ./build-game.bat first to create an .exe and then ./BuildAppx.ps1 to wrap your app as a game for your Xbox One if using VS Code, unless you Engineer another way. Both scripts can be found in / of XboxGameDev/.
 Afterwhich you may need to apply a certificate to the resulting *appx or Xbox One App or Game before your Xbox One will accept it or load it.
 
+Change the credentials in BuildAppx.ps1 to match your Xbox One local ip address and login credentials if you applied those.
+
 ### Deployment to Xbox One X
 The built package (.msixvc) can be deployed directly to Xbox One X console using:
 - Xbox Device Portal
