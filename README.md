@@ -57,7 +57,7 @@ Therefore you'll need to run build-game.bat first to create an .exe and then .Bu
 
 Afterwhich you may need to apply a certificate to the resulting *appx or Xbox One App or Game before your Xbox One will accept it or load it.
 
-Change the credentials in BuildAppx.ps1 to match your Xbox One local ip address and login credentials if you applied those while in DevMode.
+Change the credentials in BuildAppx.ps1 to match your Xbox One local ip address and login credentials if you applied those while in Dev Mode.
 
 ### Deployment to Xbox One X
 The built package (.msixvc) can be deployed directly to Xbox One X console using:
