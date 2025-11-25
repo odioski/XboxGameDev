@@ -50,7 +50,11 @@ I believe Visual Studio can streamline this build process.
 
 However, code is code and we like to know what's going on under the hood.
 
-Therefore you'll need to run ./build-game.bat first to create an .exe and then ./BuildAppx.ps1 to wrap your app as a game for your Xbox One if using VS Code, unless you know or engineer another way. Both scripts can be found in / of XboxGameDev/.
+Therefore you'll need to run build-game.bat first to create an .exe and then .BuildAppx.ps1 to wrap your app as a game for your Xbox One if using VS Code, unless you know or engineer another way. Both scripts can be found in / of XboxGameDev/.
+
+  ./build-game.bat; \
+  ./BuildAppx.ps1; \
+  
 
 Afterwhich you may need to apply a certificate to the resulting *appx or Xbox One App or Game before your Xbox One will accept it or load it.
 
