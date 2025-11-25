@@ -51,6 +51,26 @@ The built package (.msixvc) can be deployed directly to Xbox One X console using
 - Visual Studio remote debugging
 - Xbox One Manager XDK tool
 
+#### Optional:
+I believe Visual Studio can streamline this  process.
+
+However, code is code and we like to know what's going on under the hood.
+
+Therefore you'll need to run build-game.bat first to create an .exe and then .BuildAppx.ps1 to wrap your app as a game for your Xbox One if using VS Code, unless you know or engineer another way. Both scripts can be found in / of XboxGameDev/.
+
+      ./build-game.bat && ./BuildAppx.ps1
+  
+
+Afterwhich you may need to apply a certificate to the resulting *appx or Xbox One App or Game before your Xbox One will accept it or load it.
+
+Change the credentials in deploy-game.bat to match your Xbox One local ip address and login credentials if you applied those while in Dev Mode.
+
+Then:
+
+      ./deploy-game.bat
+
+
+
 ## Key Classes
 
 ### Sample (XboxGame.h)
@@ -80,3 +100,8 @@ The code includes specific optimizations for Xbox One X Scorpio:
 - Uses Microsoft's official GDK APIs and best practices
 - Targets Gaming.Xbox.Scorpio.x64 platform exclusively
 - Ready for Xbox console deployment and testing
+- Scorpio is the codename for the Xbox One X, originally released as the developer's Xbox One.
+###
+GDK merges Windows 10 UAP SDK wtih XboxOne's SDK allowing your game or app more control over the Xbox One's GPU. During the moment Scorpio came with free access to the Xbox One SDK which has MANY versions now than at the time of launch. Once GPU's became more desired as proccessors the GDK was an obvious next solution. 
+
+This environment/sketchpad (XboxGameDev) is setup for the current GDK.
