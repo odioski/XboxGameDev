@@ -45,7 +45,7 @@ This is a minimal Xbox One X Scorpio game development environment built using Mi
 3. Choose Debug or Release configuration
 4. Build solution (Ctrl+Shift+B)
 
-##Optional:
+# Optional
 I believe Visual Studio can streamline this process. However, code is code and we like to know what's going on under the hood.
 Therefore you'll need to run ./build-game.bat first to create an .exe and then ./BuildAppx.ps1 to wrap your app as a game for your Xbox One. Both are found in / of XboxGameDev/.
 Afterwhich you may need to certify it before your Xbox will accept it or load it.
