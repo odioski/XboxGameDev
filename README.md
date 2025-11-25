@@ -48,7 +48,7 @@ This is a minimal Xbox One X Scorpio game development environment built using Mi
 #### Optional:
 I believe Visual Studio can streamline this process. However, code is code and we like to know what's going on under the hood.
 Therefore you'll need to run ./build-game.bat first to create an .exe and then ./BuildAppx.ps1 to wrap your app as a game for your Xbox One if using VS Code, unless you Engineer another way. Both scripts can be found in / of XboxGameDev/.
-Afterwhich you may need to certify the resulting *appx or Xbox One App or Game before your Xbox One will accept it or load it.
+Afterwhich you may need to apply an certificate the resulting *appx or Xbox One App or Game before your Xbox One will accept it or load it.
 
 ### Deployment to Xbox One X
 The built package (.msixvc) can be deployed directly to Xbox One X console using:
