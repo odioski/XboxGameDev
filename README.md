@@ -44,9 +44,15 @@ This is a minimal Xbox One X Scorpio game development environment built using Mi
 2. Select **Gaming.Xbox.Scorpio.x64** platform
 3. Choose Debug or Release configuration
 4. Build solution (Ctrl+Shift+B)
-###
+
+### Deployment to Xbox One X
+The built package (.msixvc) can be deployed directly to Xbox One X console using:
+- Xbox Device Portal
+- Visual Studio remote debugging
+- Xbox One Manager XDK tool
+
 #### Optional:
-I believe Visual Studio can streamline this build process.
+I believe Visual Studio can streamline this  process.
 
 However, code is code and we like to know what's going on under the hood.
 
@@ -58,12 +64,11 @@ Therefore you'll need to run build-game.bat first to create an .exe and then .Bu
 Afterwhich you may need to apply a certificate to the resulting *appx or Xbox One App or Game before your Xbox One will accept it or load it.
 
 Change the credentials in BuildAppx.ps1 to match your Xbox One local ip address and login credentials if you applied those while in Dev Mode.
+Then:
 
-### Deployment to Xbox One X
-The built package (.msixvc) can be deployed directly to Xbox One X console using:
-- Xbox Device Portal
-- Visual Studio remote debugging
-- Xbox One Manager XDK tool
+      ./deploy-game.bat
+
+
 
 ## Key Classes
 
