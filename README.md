@@ -102,7 +102,7 @@ The code includes specific optimizations for Xbox One X Scorpio:
 - Ready for Xbox console deployment and testing
 - Scorpio is the codename for the Xbox One X, originally released as the developer's Xbox One.
 ###
-GDK merges Windows 10 UWP SDK wtih XboxOne's SDK allowing your game or app more control over the Xbox One's GPU. During the moment Scorpio came with free access to the Xbox One SDK which has MANY versions now than at the time of launch. Once GPU's became more desired as proccessors the GDK was an obvious next solution. 
+GDK merges Windows 10 UWP SDK wtih XboxOne's SDK allowing your game or app more control over the Xbox One's GPU. During the moment Scorpio came with free access to the Xbox One SDK which has MANY versions now than at the time of launch. Once GPU's became more desired as proccessors (microprocessors, only because of $) did then the GDK became an obvious next solution. 
 
 This environment/sketchpad (XboxGameDev) is setup for the current GDK.
 
