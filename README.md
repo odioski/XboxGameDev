@@ -61,7 +61,7 @@ Therefore you'll need to run build-game.bat first to create an .exe and then .Bu
       ./build-game.bat && ./BuildAppx.ps1
   
 
-Afterwhich you may need to apply a certificate to the resulting *appx or Xbox One App or Game before your Xbox One will accept it or load it.
+Afterwhich you may need to apply a certificate to the resulting *appx or Xbox One App or Xbox One Game before your Xbox One X will accept it or load it.
 
 Change the credentials in deploy-game.bat to match your Xbox One local ip address and login credentials if you applied those while in Dev Mode.
 
