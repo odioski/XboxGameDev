@@ -106,14 +106,6 @@ GDK merges Windows 10 UWP SDK wtih XboxOne's SDK allowing your game or app more 
 
 This environment/sketchpad (XboxGameDev) is setup for the current GDK.
 
-jUst so u kNO...
-
-A couple of taps and button pressess, within a sentence, and that shit is cleared, which also, does include clearing me to keep going and pressing forward.
-
-What I mean is...we don't need any of that shit to know what we're doin. We don't need any of that shit to get it done either.
-
-...
-
 ##
 INSTALLATION
 
